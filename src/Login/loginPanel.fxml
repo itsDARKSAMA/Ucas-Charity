@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="loginBg" prefHeight="700.0" prefWidth="450.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.LoginPanelController">
+    <stylesheets>
+        <URL value="@loginpanel.css" />
+    </stylesheets>
+   <children>
+      <JFXTextField fx:id="userTF" focusColor="#f3c623" layoutX="115.0" layoutY="340.0" prefHeight="30.0" prefWidth="222.0" promptText="Username" unFocusColor="#10375c" />
+      <JFXPasswordField fx:id="passTF" focusColor="#f3c623" layoutX="115.0" layoutY="391.0" prefHeight="30.0" prefWidth="222.0" promptText="Password" unFocusColor="#10375c" />
+      <JFXButton id="loginBtn" fx:id="LoginBtn" layoutX="115.0" layoutY="500.0" onAction="#checkLogin" prefHeight="31.0" prefWidth="222.0" ripplerFill="#194168" stylesheets="@loginpanel.css" text="Login" textFill="#10375c" wrapText="true" />
+      <Label fx:id="loginLabel" layoutX="116.0" layoutY="546.0" prefHeight="21.0" prefWidth="222.0" textFill="RED" />
+      <JFXComboBox fx:id="loginCBox" layoutX="118.0" layoutY="442.0" prefHeight="30.0" prefWidth="222.0" promptText="Admin / Employee" style="-fx-align: center;" />
+   </children>
+</AnchorPane>
