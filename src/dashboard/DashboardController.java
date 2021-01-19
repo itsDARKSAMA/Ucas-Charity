@@ -450,6 +450,7 @@ public class DashboardController implements Initializable {
 
         if (npFnameForm.getText().isEmpty() || npLnForm.getText().isEmpty() || npFmForm.getText().isEmpty() || npMobileForm.getText().isEmpty()) {
             ErrorAlert();
+            return;
         }
 
         String npSqlInsert = "INSERT INTO needyPeopleDB(npFname,npLname,npFamily,npMobile) VALUES(?,?,?,?)";
@@ -529,6 +530,7 @@ public class DashboardController implements Initializable {
 
         if (npFnameForm.getText().isEmpty() || npLnForm.getText().isEmpty() || npFmForm.getText().isEmpty() || npMobileForm.getText().isEmpty()) {
             ErrorAlert();
+            return;
         }
 
         String npSqlDel = "delete from needyPeopleDB where npID =?";
